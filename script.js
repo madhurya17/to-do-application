@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadTodos();
     setupEventListeners();
-    updateTodoCount();
+    
 });
 
 
@@ -9,7 +9,7 @@ const addTodoBtn = document.getElementById('addTodo');
 const todoInput = document.getElementById('todoInput');
 const todoList = document.getElementById('todoList');
 const filterBtns = document.querySelectorAll('.filter-btn');
-const todoCount = document.getElementById('todoCount');
+
 
 
 function setupEventListeners() {
@@ -123,13 +123,6 @@ function filterTodos(filter) {
     updateTodoCount();
 }
 
-function updateTodoCount() {
-    const todos = getTodosFromLocal();
-    const activeCount = todos.filter(t => !t.completed).length;
-    const totalCount = todos.length;
-    
-    todoCount.textContent = `${activeCount} active / ${totalCount} total`;
-}
 
 
 function saveTodoToLocal(todo) {

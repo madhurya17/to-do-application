@@ -87,18 +87,6 @@ h1 {
   color: white;
 }
 
-.todo-count {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-#todoList {
-  list-style: none;
-  padding: 0;
-}
 
 .todo-item {
   display: flex;
@@ -192,7 +180,4 @@ h1 {
     margin-bottom: 0.8rem;
   }
   
-  .todo-count {
-    margin-top: 0.8rem;
-  }
 }
